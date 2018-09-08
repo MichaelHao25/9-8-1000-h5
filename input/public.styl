@@ -144,7 +144,7 @@ body
 						vertical-align 10%
 
 .section-two
-	height 100vh
+	height 100%
 
 	.df
 		display flex
@@ -226,15 +226,15 @@ body
 			width 505px
 
 .section-three
-	height 100vh
+	height 100%
 
 	.df
 		display flex
 		flex-direction column
 		justify-content space-between
 		align-items center
-		height 100%
 		overflow hidden
+		height 100%
 
 	img
 		display block
@@ -261,7 +261,7 @@ body
 			width 512px
 			height 1px
 			background #b50007
-		
+
 		p
 			margin 0 auto
 			padding-top 20px
@@ -269,59 +269,121 @@ body
 
 	.footer
 		position relative
+		flex 0 0 640px
 		width 100%
 		height 640px
-		flex 0 0 640px
+
 		.beer
-			width 100%
 			position absolute
+			right 0
 			bottom 0
 			left 0
-			right 0
+			width 100%
+
 		.round
 			position absolute
+
 		.round-1
 			bottom 327px
 			left 28px
 			width 172px
+
 		.round-2
 			bottom 510px
 			left 182px
 			width 110px
+
 		.round-3
 			bottom 495px
 			left 340px
 			width 143px
+
 		.round-4
 			bottom 520px
 			left 534px
 			width 108px
+
 		.round-5
 			bottom 300px
-			width 172px
 			left 570px
+			width 172px
 
-					
-.container
-html
-body
-.mobile-wrap
-.swiper-container
+html, body, .mobile-wrap, .swiper-container
 	width 100%
 	height 100%
+
+
+
 .section-four
 	.celebrate
-		height 100%
 		display flex
-		justify-content space-between
 		flex-direction column
+		justify-content space-between
+		height 100%
+
 .section-five
 	.taste
+		display flex
+		flex-direction column
+		justify-content space-between
 		padding-bottom 0
 		height 100%
+
+		.center-box
+			width 100%
+
+		.bottom-box
+			width 100%
+
+.section-six
+	.df
 		display flex
-		justify-content space-between
 		flex-direction column
+		justify-content space-between
+		height 100%
+
+	.lh
+		display flex
+		flex 1 1 auto
+		flex-direction column
+		width 100%
+
+		.text, .box
+			display flex
+			flex 1 1 auto
+			align-items center
+.container
+	height calc(100% - 50Px)
+.bottom-menu
+	position relative
+	display flex
+	justify-content space-between
+	padding 10Px 0
+	height 50Px
+	text-align center
+	background #de3b3b
+
+	.btn-go-top
+		flex 0 0 50Px
+		width 50Px
+		height 100%
+		background url('../img/top.png') center center /70% auto no-repeat
+
+	.total
+		flex 1 1 auto
+		color #ffffff
+		font-size 14Px
+		line-height 30Px
+		border-left 1px solid #fff
+		border-right 1px solid #fff
+	.btn-go
+		display block
+		flex 0 0 100Px
+		color #ffffff
+		text-align center
+		font-weight bold
+		font-size 16Px
+		line-height 30Px
 
 /*
 2333
