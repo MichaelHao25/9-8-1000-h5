@@ -227,6 +227,11 @@
 			<div class="total">累计售出：3/1000</div>
 			<a href="#" class="btn-go">立即预定</a>
 		</div>
+		<div class="music-control active">
+			<img src="img/music_off.8d94020a5c.png" alt="">
+			<!-- music.c0fda016db.gif -->
+		</div>
+		<audio src="./sound/1.mp3" preload="auto" autoplay id="audio"></audio>
 	</div>
 	<!--mobile_wrap-->
 
@@ -252,7 +257,41 @@
 		$(".time b").text(f);
 		$(".section-one .bottom .count-down-container .wrapper .day span").text(f);
 		imgauto(".lh .box ul li img")
-		
+
+
+		$('.bottom-menu .btn-go-top').on('click', function (e) {
+			e.preventDefault();
+			mySwiper.slideTo(0, 1000, false);
+		})
+		$('.music-control').on('click', function (e) {
+			e.preventDefault();
+			var audio = document.getElementById('audio');
+			if ($(this).toggleClass('active').hasClass('active')) {
+				audio.play();
+			} else {
+				audio.pause();
+			}
+		})
+
+
+		document.addEventListener("WeixinJSBridgeReady", function () {
+			audio.play();
+			$('.music-control').addClass('active');
+		}, false);
+		document.addEventListener("DOMContentLoaded", function () {
+			audio.play();
+			$('.music-control').addClass('active');
+		}, false);
+		document.addEventListener('touchstart', function () {
+			function audioAutoPlay() {
+				var audio = document.getElementById('audio');
+				audio.play();
+				$('.music-control').addClass('active');
+			}
+			audioAutoPlay();
+		}, {
+			once: true,
+		});
 	</script>
 </body>
 
