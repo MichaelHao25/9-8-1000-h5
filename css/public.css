@@ -17,14 +17,14 @@ body {
   height: 100%;
 }
 .swiper-pagination-bullet {
-  border: 1px solid #000;
   width: 0.16rem;
   height: 0.16rem;
+  border: 1px solid #000;
 }
 .swiper-pagination-bullet-active {
   border-color: #000;
-  opacity: 0.2;
   background: none;
+  opacity: 0.2;
 }
 .section-one .df {
   display: -webkit-box;
@@ -416,6 +416,30 @@ body {
           justify-content: space-between;
   height: 100%;
 }
+.section-four .celebrate .top-box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 0 0.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.section-four .celebrate .bottom-box {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 4.74rem;
+          flex: 0 0 4.74rem;
+}
 .section-five .taste {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -431,9 +455,9 @@ body {
   height: 100%;
 }
 .section-five .taste .center-box {
-  width: 100%;
-  padding: 0 4%;
   margin: 0;
+  padding: 0 4%;
+  width: 100%;
 }
 .section-five .taste .bottom-box {
   width: 100%;
@@ -496,8 +520,8 @@ body,
           justify-content: space-between;
   padding: 10Px 0;
   height: 50Px;
-  text-align: center;
   background: #de3b3b;
+  text-align: center;
 }
 .bottom-menu .btn-go-top {
   -webkit-box-flex: 0;
@@ -511,11 +535,11 @@ body,
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
   color: #fff;
   font-size: 14Px;
   line-height: 30Px;
-  border-left: 1px solid #fff;
-  border-right: 1px solid #fff;
 }
 .bottom-menu .btn-go {
   display: block;
@@ -530,11 +554,11 @@ body,
 }
 .music-control {
   position: fixed;
-  right: 15Px;
   top: 15Px;
+  right: 15Px;
+  z-index: 10;
   width: 35Px;
   height: 35Px;
-  z-index: 10;
 }
 .music-control.active:after {
   display: block;
@@ -544,14 +568,14 @@ body,
           animation: rotate2d 1.2s linear infinite;
 }
 .music-control:after {
-  content: '';
   position: absolute;
   top: 0;
+  right: 0;
   bottom: 0;
   left: 0;
-  right: 0;
-  background: url("../img/music.c0fda016db.gif") center center/100% auto no-repeat;
   display: none;
+  background: url("../img/music.c0fda016db.gif") center center/100% auto no-repeat;
+  content: '';
 }
 .music-control img {
   width: 100%;
@@ -561,22 +585,22 @@ body,
 */
 @-webkit-keyframes rotate2d {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(1turn);
     transform: rotate(1turn);
+    -webkit-transform: rotate(1turn);
   }
 }
 @keyframes rotate2d {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(1turn);
     transform: rotate(1turn);
+    -webkit-transform: rotate(1turn);
   }
 }
 
