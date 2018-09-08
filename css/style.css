@@ -156,8 +156,6 @@
 }
 .celebrate .top-box {
   padding: 1.5rem 0.3rem 0.7rem;
-  height: -webkit-calc(100vh - 4.74rem);
-  height: calc(100vh - 4.74rem);
 }
 .celebrate .top-box .img1 {
   width: 5.12rem;

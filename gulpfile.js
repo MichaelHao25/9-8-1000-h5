@@ -152,7 +152,8 @@ gulp.task('t_images_rename', function () {
     return;
 })
 
-gulp.task('default', ['serve', 't_images_rename']);
+// gulp.task('default', ['serve', 't_images_rename']);
+gulp.task('default', ['serve']);
 
 // gulp.task('watch', function() {
 //   gulp.watch(['input/*.css'], ['css']);
