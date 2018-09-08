@@ -16,6 +16,14 @@ body
 	position relative
 	height 100%
 
+.swiper-pagination-bullet
+	border 1px solid #000
+	width 16px
+	height 16px
+.swiper-pagination-bullet-active
+	border-color #000
+	opacity 0.2
+	background none
 .section-one
 	.df
 		display flex
@@ -308,9 +316,6 @@ body
 			left 570px
 			width 172px
 
-html, body, .mobile-wrap, .swiper-container
-	width 100%
-	height 100%
 
 
 
@@ -331,6 +336,8 @@ html, body, .mobile-wrap, .swiper-container
 
 		.center-box
 			width 100%
+			padding 0 4%
+			margin 0
 
 		.bottom-box
 			width 100%
@@ -352,6 +359,11 @@ html, body, .mobile-wrap, .swiper-container
 			display flex
 			flex 1 1 auto
 			align-items center
+
+html, body, .mobile-wrap, .swiper-container
+	width 100%
+	height 100%
+
 .container
 	height calc(100% - 50Px)
 .bottom-menu
